@@ -1,0 +1,40 @@
+{
+  "name": "@syntxflow/ytdl-os",
+  "version": "1.0.0",
+  "description": "Youtube downloader",
+  "type": "module",
+  "main": "./dist/index.cjs.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SyntxFlow/ytdl-os.git"
+  },
+  "keywords": [
+    "Youtube",
+    "downloader"
+  ],
+  "author": "SyntxFlow",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SyntxFlow/ytdl-os/issues"
+  },
+  "homepage": "https://github.com/SyntxFlow/ytdl-os#readme",
+  "devDependencies": {
+    "rollup": "^4.37.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "undici": "^7.6.0",
+    "ws": "^8.18.1"
+  }
+}
